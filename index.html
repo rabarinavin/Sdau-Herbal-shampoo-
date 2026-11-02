@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SDAU Herbal Shampoo | College of Agriculture Bhachau</title>
+<meta name="description" content="SDAU Herbal Shampoo - Aloe Vera. A student entrepreneurship development project at College of Agriculture, Bhachau.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --forest:#103b2b;
+  --deep:#09251b;
+  --green:#246044;
+  --sage:#dce7d8;
+  --cream:#f8f5eb;
+  --gold:#c9a45e;
+  --ink:#1b3025;
+  --muted:#6e7b70;
+  --white:#fffefa;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink)}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+button{font:inherit}
+.container{width:min(1160px,90%);margin:auto}
+.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700}
+.heading{font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,54px);line-height:1.1;color:var(--forest);margin:12px 0 18px}
+.subtext{color:var(--muted);line-height:1.8;font-size:15px}
+.section{padding:100px 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 48px}
+.gold-line{width:55px;height:2px;background:var(--gold);margin:18px auto}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 23px;background:var(--gold);color:var(--deep);font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:.25s}
+.btn:hover{background:#e0bd78;transform:translateY(-2px)}
+.btn-outline{background:transparent;border:1px solid rgba(255,255,255,.55);color:white}
+.btn-outline:hover{background:white;color:var(--forest)}
+
+/* Header */
+.topbar{background:var(--deep);color:#e8e9dd;padding:9px 0;font-size:11px;letter-spacing:1px}
+.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:20;background:rgba(248,245,235,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e5dfce}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.identity{display:flex;align-items:center;gap:13px}
+.identity img{width:53px;height:53px;object-fit:contain}
+.identity strong{display:block;font-family:'Playfair Display',serif;color:var(--forest);font-size:18px}
+.identity span{font-size:9px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
+.navlinks{display:flex;align-items:center;gap:25px}
+.navlinks a{font-size:12px;font-weight:700;color:#3e5145}
+.navlinks a:hover{color:#a47c37}
+.menu-btn{display:none;background:none;border:0;font-size:27px;color:var(--forest);cursor:pointer}
+
+/* Hero */
+.hero{background:var(--deep);color:white;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:500px;height:500px;border:1px solid rgba(201,164,94,.2);border-radius:50%;right:-170px;top:-220px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;padding:75px 0 85px;position:relative}
+.hero-copy{padding:15px 0}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(45px,6vw,76px);line-height:1.03;margin:20px 0}
+.hero h1 span{color:var(--gold);display:block}
+.hero-copy p{max-width:490px;color:#d1dbd1;line-height:1.9;font-size:15px}
+.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.hero-note{margin-top:35px;color:#aab9aa;font-size:11px;letter-spacing:1.5px}
+.hero-photo{position:relative}
+.hero-photo img{width:100%;height:540px;object-fit:cover;object-position:center 20%;border:1px solid rgba(201,164,94,.55);padding:8px;background:rgba(255,255,255,.04)}
+.photo-caption{position:absolute;bottom:25px;left:-25px;background:var(--gold);color:var(--deep);padding:15px 22px;font-family:'Playfair Display',serif;font-size:18px}
+
+/* University strip */
+.university{background:#e9e6d8;padding:25px 0;border-bottom:1px solid #ded8c6}
+.uni-inner{display:flex;justify-content:center;align-items:center;gap:22px;text-align:center}
+.uni-inner img{width:50px;height:50px;object-fit:contain}
+.uni-inner strong{display:block;font-family:'Playfair Display',serif;color:var(--forest);font-size:17px}
+.uni-inner span{font-size:10px;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.about-image{position:relative}
+.about-image img{width:100%;height:420px;object-fit:cover;object-position:center;border:8px solid var(--white);box-shadow:0 18px 45px rgba(24,49,34,.1)}
+.image-label{position:absolute;right:-15px;bottom:25px;background:var(--forest);color:white;padding:17px 22px;font-size:11px;letter-spacing:1px}
+.about-copy p{margin-bottom:15px}
+.info-points{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:27px}
+.info-point{border-left:2px solid var(--gold);padding:5px 0 5px 13px}
+.info-point strong{display:block;color:var(--forest);font-size:13px}
+.info-point span{font-size:11px;color:var(--muted)}
+
+/* Product */
+.product-section{background:var(--forest);color:white}
+.product-section .heading{color:white}
+.product-section .subtext{color:#c7d3c7}
+.product-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.product-image{background:#1c4a35;padding:20px;border:1px solid rgba(201,164,94,.45)}
+.product-image img{width:100%;height:540px;object-fit:cover;object-position:center}
+.product-details .eyebrow{color:var(--gold)}
+.product-details h2{color:white}
+.product-details p{color:#d0d9d0;line-height:1.9;margin-bottom:15px}
+.product-facts{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
+.fact{border:1px solid rgba(255,255,255,.25);padding:12px 17px}
+.fact strong{display:block;color:var(--gold);font-family:'Playfair Display',serif;font-size:20px}
+.fact span{font-size:10px;color:#d0d9d0;letter-spacing:1px;text-transform:uppercase}
+
+/* Ingredients */
+.ingredients-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.ingredient{background:var(--white);border:1px solid #e9e1ce;padding:27px 24px;transition:.25s}
+.ingredient:hover{transform:translateY(-5px);box-shadow:0 14px 35px rgba(22,54,34,.08)}
+.ingredient .number{font-family:'Playfair Display',serif;font-size:28px;color:var(--gold)}
+.ingredient h3{font-family:'Playfair Display',serif;color:var(--forest);font-size:20px;margin:9px 0}
+.ingredient p{font-size:12px;color:var(--muted);line-height:1.8}
+
+/* Gallery */
+.gallery{background:#e9e6d8}
+.gallery-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:230px 230px;gap:14px}
+.gallery-item{overflow:hidden;background:#d8dfd0;position:relative}
+.gallery-item:first-child{grid-row:span 2}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.gallery-item:hover img{transform:scale(1.05)}
+.gallery-item:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.55))}
+.gallery-item span{position:absolute;bottom:16px;left:17px;color:white;z-index:1;font-family:'Playfair Display',serif;font-size:17px}
+
+/* Process placeholder */
+.process-box{background:var(--white);border:1px dashed #b9aa82;padding:45px;text-align:center}
+.process-box .symbol{font-size:35px;color:var(--gold)}
+.process-box h3{font-family:'Playfair Display',serif;color:var(--forest);font-size:25px;margin:12px}
+.process-box p{font-size:13px;color:var(--muted);max-width:550px;margin:auto;line-height:1.8}
+
+/* Project */
+.project-section{background:#f0eddf}
+.project-card{background:var(--deep);color:white;padding:42px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.project-card h3{font-family:'Playfair Display',serif;font-size:27px;color:var(--gold);margin-bottom:17px}
+.project-card p{font-size:13px;color:#d5dfd5;line-height:1.9}
+.project-meta{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.meta{border-bottom:1px solid rgba(255,255,255,.18);padding-bottom:12px}
+.meta span{display:block;color:#aebdae;font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.meta strong{font-size:13px;color:white}
+
+/* Team */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.member{background:var(--white);border:1px solid #e8e0cf;padding:25px;position:relative}
+.member:before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:var(--gold)}
+.member small{font-size:10px;color:#a17c3d;letter-spacing:2px;text-transform:uppercase}
+.member h3{font-family:'Playfair Display',serif;color:var(--forest);font-size:18px;margin:9px 0}
+.member p{font-size:11px;color:var(--muted)}
+.guide{margin:35px auto 0;max-width:480px;background:var(--forest);color:white;text-align:center;padding:27px}
+.guide span{font-size:10px;letter-spacing:2px;color:var(--gold);text-transform:uppercase}
+.guide h3{font-family:'Playfair Display',serif;font-size:24px;margin-top:8px}
+
+/* Footer */
+footer{background:var(--deep);color:#d5ded4;padding:55px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:35px;padding-bottom:35px}
+.footer-brand{font-family:'Playfair Display',serif;color:var(--gold);font-size:25px;margin-bottom:13px}
+footer p{font-size:12px;line-height:1.9;color:#b8c5b8}
+footer h4{font-family:'Playfair Display',serif;color:white;margin-bottom:15px}
+footer a{display:block;font-size:12px;color:#c5d0c4;margin:8px 0}
+.copyright{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;text-align:center;font-size:10px;color:#94a495;letter-spacing:1px}
+
+@media(max-width:850px){
+ .navlinks{display:none;position:absolute;top:82px;left:0;right:0;background:var(--cream);padding:25px 5%;flex-direction:column;align-items:flex-start;border-bottom:1px solid #ddd}
+ .navlinks.open{display:flex}
+ .menu-btn{display:block}
+ .hero-grid,.about-grid,.product-grid{grid-template-columns:1fr}
+ .hero-grid{padding:55px 0}
+ .hero-photo{max-width:570px;margin:auto;width:100%}
+ .hero-photo img{height:470px}
+ .about-grid,.product-grid{gap:35px}
+ .project-card{grid-template-columns:1fr}
+ .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+ .section{padding:70px 0}
+ .topbar .container{justify-content:center;text-align:center}
+ .identity img{width:43px;height:43px}
+ .identity strong{font-size:15px}
+ .identity span{font-size:8px}
+ .hero h1{font-size:49px}
+ .hero-photo img{height:410px}
+ .photo-caption{left:-5px;font-size:15px}
+ .about-image img{height:320px}
+ .info-points{grid-template-columns:1fr 1fr}
+ .product-image img{height:390px}
+ .ingredients-grid{grid-template-columns:1fr 1fr}
+ .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:220px 160px 160px}
+ .gallery-item:first-child{grid-row:span 2}
+ .team-grid{grid-template-columns:1fr 1fr}
+ .project-card{padding:25px}
+ .project-meta{grid-template-columns:1fr 1fr}
+ .footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:380px){
+ .ingredients-grid,.team-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+<div class="topbar">
+ <div class="container">
+  <span>COLLEGE OF AGRICULTURE · BHACHAU</span>
+  <span>SARDAKRUSHINAGAR DANTIWADA AGRICULTURAL UNIVERSITY</span>
+ </div>
+</div>
+
+<header>
+ <div class="container nav">
+  <a class="identity" href="#home">
+   <img src="ChatGPT%20Image%20Nov%202,%202026,%2010_05_35%20AM.png" alt="Original SDAU Logo">
+   <div><strong>SDAU Herbal Shampoo</strong><span>Nature Inspired Hair Care</span></div>
+  </a>
+  <button class="menu-btn" aria-label="Open menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button>
+  <nav class="navlinks">
+   <a href="#home">HOME</a>
+   <a href="#college">COLLEGE</a>
+   <a href="#product">PRODUCT</a>
+   <a href="#ingredients">INGREDIENTS</a>
+   <a href="#project">PROJECT</a>
+   <a href="#team">OUR TEAM</a>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+ <div class="container hero-grid">
+  <div class="hero-copy">
+   <div class="eyebrow">A Student Entrepreneurship Project</div>
+   <h1>Nature's Touch.<span>Herbal Care.</span></h1>
+   <p>Introducing SDAU Herbal Shampoo with Aloe Vera — a student project inspired by traditional herbal ingredients and the idea of nature-inspired everyday hair care.</p>
+   <div class="hero-actions">
+    <a class="btn" href="#product">Explore Product ↗</a>
+    <a class="btn btn-outline" href="#project">Our Project</a>
+   </div>
+   <div class="hero-note">SDAU · COLLEGE OF AGRICULTURE · BHACHAU</div>
+  </div>
+  <div class="hero-photo">
+   <img src="ChatGPT%20Image%20Nov%202,%202026,%2010_05_06%20AM.png" alt="SDAU Herbal Shampoo promotional portrait">
+   <div class="photo-caption">SDAU Herbal Shampoo · Aloe Vera</div>
+  </div>
+ </div>
+</section>
+
+<div class="university">
+ <div class="container uni-inner">
+  <img src="ChatGPT%20Image%20Nov%202,%202026,%2010_05_35%20AM.png" alt="SDAU logo">
+  <div>
+   <strong>Sardarkrushinagar Dantiwada Agricultural University</strong>
+   <span>College of Agriculture · Bhachau, Kachchh</span>
+  </div>
+ </div>
+</div>
+
+<section class="section" id="college">
+ <div class="container about-grid">
+  <div class="about-image">
+   <img src="ChatGPT%20Image%20Nov%202,%202026,%2010_04_42%20AM.jpg" alt="College of Agriculture Bhachau campus entrance">
+   <div class="image-label">OUR INSTITUTION · BHACHAU</div>
+  </div>
+  <div class="about-copy">
+   <div class="eyebrow">Our Institution</div>
+   <h2 class="heading">College of Agriculture, Bhachau</h2>
+   <p class="subtext">This project is presented by students of the College of Agriculture, Bhachau, under Sardarkrushinagar Dantiwada Agricultural University.</p>
+   <p class="subtext">The project connects agricultural knowledge, plant-based ingredients and entrepreneurship through a student-developed herbal shampoo concept.</p>
+   <div class="info-points">
+    <div class="info-point"><strong>Institution</strong><span>College of Agriculture</span></div>
+    <div class="info-point"><strong>Location</strong><span>Bhachau, Kachchh</span></div>
+    <div class="info-point"><strong>University</strong><span>SDAU</span></div>
+    <div class="info-point"><strong>Project Area</strong><span>Entrepreneurship Development</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section product-section" id="product">
+ <div class="container product-grid">
+  <div class="product-image">
+   <img src="ChatGPT%20Image%20Nov%202,%202026,%2010_05_14%20AM.png" alt="SDAU Herbal Shampoo Aloe Vera 100 ml bottle">
+  </div>
+  <div class="product-details">
+   <div class="eyebrow">Our Featured Product</div>
+   <h2 class="heading">SDAU Herbal Shampoo</h2>
+   <p>Meet our Aloe Vera shampoo concept, developed as part of a student entrepreneurship project. The product brings together selected herbal ingredients and a ready-made shampoo base.</p>
+   <p>Designed around a nature-inspired identity, the project explores product presentation, branding and the basics of value addition.</p>
+   <div class="product-facts">
+    <div class="fact"><strong>100 ml</strong><span>Net Volume</span></div>
+    <div class="fact"><strong>Aloe Vera</strong><span>Featured Ingredient</span></div>
+    <div class="fact"><strong>SDAU</strong><span>Student Project</span></div>
+   </div>
+   <a class="btn" href="#ingredients">Discover Ingredients ↗</a>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="ingredients">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Selected Ingredients</div>
+   <h2 class="heading">Inspired by Herbal Tradition</h2>
+   <p class="subtext">The product concept features a selection of familiar botanical ingredients alongside a ready-made shampoo base.</p>
+   <div class="gold-line"></div>
+  </div>
+  <div class="ingredients-grid">
+   <article class="ingredient"><div class="number">01</div><h3>Aloe Vera</h3><p>A well-known botanical ingredient featured at the centre of our shampoo concept.</p></article>
+   <article class="ingredient"><div class="number">02</div><h3>Neem</h3><p>A traditional plant ingredient included in the herbal formulation concept.</p></article>
+   <article class="ingredient"><div class="number">03</div><h3>Curry Leaves</h3><p>A familiar botanical ingredient used in traditional hair-care practices.</p></article>
+   <article class="ingredient"><div class="number">04</div><h3>Tulsi</h3><p>A valued herb in Indian botanical traditions.</p></article>
+   <article class="ingredient"><div class="number">05</div><h3>Flaxseed</h3><p>A plant-derived ingredient included in the project formulation.</p></article>
+   <article class="ingredient"><div class="number">06</div><h3>Shampoo Base</h3><p>Ready-made shampoo base and floral fragrance used in the product concept.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section gallery" id="gallery">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Visual Showcase</div>
+   <h2 class="heading">A Closer Look</h2>
+   <p class="subtext">Explore the SDAU Herbal Shampoo product presentation and its visual identity.</p>
+   <div class="gold-line"></div>
+  </div>
+  <div class="gallery-grid">
+   <div class="gallery-item"><img src="ChatGPT%20Image%20Nov%202,%202026,%2010_04_57%20AM.png" alt="SDAU Herbal Shampoo promotional collage"><span>Product Story</span></div>
+   <div class="gallery-item"><img src="ChatGPT%20Image%20Nov%202,%202026,%2010_05_14%20AM.png" alt="Herbal shampoo bottle"><span>Product Design</span></div>
+   <div class="gallery-item"><img src="ChatGPT%20Image%20Nov%202,%202026,%2010_05_06%20AM.png" alt="SDAU shampoo promotional portrait"><span>Brand Identity</span></div>
+   <div class="gallery-item"><img src="ChatGPT%20Image%20Nov%202,%202026,%2010_04_42%20AM.jpg" alt="College of Agriculture Bhachau"><span>Our College</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="process">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Project Development</div>
+   <h2 class="heading">From Concept to Product</h2>
+   <p class="subtext">A dedicated space for documenting the project journey.</p>
+   <div class="gold-line"></div>
+  </div>
+  <div class="process-box">
+   <div class="symbol">✦</div>
+   <h3>Manufacturing & Project Journey</h3>
+   <p>Project preparation, manufacturing activities and team photographs will be added here as the project documentation is completed.</p>
+  </div>
+ </div>
+</section>
+
+<section class="section project-section" id="project">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">Academic Presentation</div>
+   <h2 class="heading">About Our Project</h2>
+   <p class="subtext">A student initiative connecting agricultural education with product development and entrepreneurship.</p>
+   <div class="gold-line"></div>
+  </div>
+  <div class="project-card">
+   <div>
+    <h3>SDAU Herbal Shampoo – Aloe Vera</h3>
+    <p>This academic project focuses on developing and presenting a herbal shampoo product concept. It brings together ingredient selection, product branding, packaging presentation and entrepreneurship learning.</p>
+    <p style="margin-top:15px">The website serves as a digital showcase of the product and the academic project behind it.</p>
+   </div>
+   <div class="project-meta">
+    <div class="meta"><span>Project Title</span><strong>SDAU Herbal Shampoo – Aloe Vera</strong></div>
+    <div class="meta"><span>Subject</span><strong>MDC-2 · Entrepreneurship Development</strong></div>
+    <div class="meta"><span>College</span><strong>College of Agriculture, Bhachau</strong></div>
+    <div class="meta"><span>University</span><strong>Sardarkrushinagar Dantiwada Agricultural University</strong></div>
+    <div class="meta"><span>Project Guide</span><strong>Dr. Yogesh Rathva</strong></div>
+    <div class="meta"><span>Product Size</span><strong>100 ml</strong></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="team">
+ <div class="container">
+  <div class="section-head">
+   <div class="eyebrow">The People Behind the Project</div>
+   <h2 class="heading">Meet Our Team</h2>
+   <p class="subtext">The student team presenting the SDAU Herbal Shampoo project.</p>
+   <div class="gold-line"></div>
+  </div>
+  <div class="team-grid">
+   <article class="member"><small>Team Member 01</small><h3>Rabari Navinbhai V.</h3><p>Project Team</p></article>
+   <article class="member"><small>Team Member 02</small><h3>Dodiya Krishbhai</h3><p>Project Team</p></article>
+   <article class="member"><small>Team Member 03</small><h3>Chaudhary Vishnubhai</h3><p>Project Team</p></article>
+   <article class="member"><small>Team Member 04</small><h3>Chaudhary Mukeshbhai</h3><p>Project Team</p></article>
+   <article class="member"><small>Team Member 05</small><h3>Suthar Bhavesh</h3><p>Project Team</p></article>
+   <article class="member"><small>Team Member 06</small><h3>Pargi Jay</h3><p>Project Team</p></article>
+   <article class="member"><small>Team Member 07</small><h3>Asari Hardik</h3><p>Project Team</p></article>
+  </div>
+  <div class="guide">
+   <span>Project Guide</span>
+   <h3>Dr. Yogesh Rathva</h3>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footer-grid">
+   <div>
+    <div class="footer-brand">SDAU Herbal Shampoo</div>
+    <p>Nature Inspired Hair Care.<br>A student entrepreneurship project from the College of Agriculture, Bhachau.</p>
+   </div>
+   <div>
+    <h4>Explore</h4>
+    <a href="#college">Our College</a>
+    <a href="#product">Our Product</a>
+    <a href="#ingredients">Ingredients</a>
+    <a href="#project">Project Details</a>
+   </div>
+   <div>
+    <h4>Academic Details</h4>
+    <p>College of Agriculture, Bhachau<br>Sardarkrushinagar Dantiwada Agricultural University<br>Project Guide: Dr. Yogesh Rathva</p>
+   </div>
+  </div>
+  <div class="copyright">© 2026 SDAU HERBAL SHAMPOO · STUDENT PROJECT SHOWCASE</div>
+ </div>
+</footer>
+
+</body>
+</html>
